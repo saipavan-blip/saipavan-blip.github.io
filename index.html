@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sai Pavan — Software Developer & AI/ML Engineer</title>
+  <meta name="description" content="Portfolio of Sai Pavan, a B.Tech CSE student specializing in AI &amp; ML — software development, machine learning and applied engineering projects.">
+
+  <!-- Fonts: Space Grotesk for display type, Inter for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <meta name="theme-color" content="#101010">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23D5360C%22>S</text></svg>">
+</head>
+<body>
+
+  <!-- Skip link for keyboard / screen-reader users -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ BACKGROUND LAYERS (mouse-reactive) ============ -->
+  <!-- Sits behind everything (z-index in CSS). Purely decorative. -->
+  <canvas id="bgCanvas" aria-hidden="true"></canvas>
+  <div id="cursorGlow" class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav-wrap" id="navWrap">
+    <nav class="nav" aria-label="Primary">
+      <a href="#top" class="nav__logo" aria-label="Sai Pavan — home">
+        S<span>P</span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact" class="nav__cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <p class="hero__kicker">Software Developer &amp; AI/ML Engineer in training</p>
+          <h1 class="hero__name">Sai Pavan</h1>
+          <p class="hero__role">B.Tech CSE <span class="hero__role-sep">/</span> AI &amp; ML Student</p>
+          <p class="hero__desc">
+            I build software that thinks a little — from mobile apps and full-stack
+            products to machine learning models that turn data into decisions.
+            Currently deep in algorithms, neural networks and the engineering
+            discipline it takes to ship both reliably.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View projects</a>
+            <!-- EDIT: place your resume PDF at assets/resume.pdf -->
+            <a href="assets/resume.pdf" class="btn btn--ghost" download>Download resume</a>
+          </div>
+
+          <div class="hero__socials">
+            <!-- EDIT: replace with your GitHub URL -->
+            <a href="https://github.com/saipavan-blip" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .31.2.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg>
+              GitHub
+            </a>
+            <!-- EDIT: replace with your LinkedIn URL -->
+            <a href="https://www.linkedin.com/in/dola-guru-sai-pavan-munagala-7b2544333/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <!-- PROFILE PHOTO -->
+          <!-- EDIT: place your photo at assets/profile.jpg (replaces this placeholder automatically) -->
+          <div class="profile-frame">
+            <img
+              id="profilePhoto"
+              class="profile-photo"
+              src="assets/profile.jpg"
+              alt="Portrait of Sai Pavan"
+              onerror="this.style.display='none'; document.getElementById('profileFallback').style.display='flex';"
+            >
+            <div id="profileFallback" class="profile-fallback">
+              <span>SP</span>
+              <small>Add assets/profile.jpg</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <h2 class="section__title">About</h2>
+      </div>
+
+      <div class="about__grid">
+        <p class="about__text">
+          I'm a Computer Science and Engineering student at VIT-AP University,
+          specializing in Artificial Intelligence and Machine Learning. My work
+          sits at the intersection of solid software engineering and applied AI —
+          I like understanding a system down to its data structures, then using
+          that foundation to build things that learn.
+        </p>
+        <p class="about__text">
+          Over the past few years I've shipped a Flutter music player used daily,
+          built an IoT power-generation prototype from scratch, and designed
+          business and product websites end to end. I care about writing code
+          that's readable a year later, and about products that solve a real,
+          specific problem rather than a hypothetical one.
+        </p>
+
+        <ul class="about__stats">
+          <li>
+            <span class="about__stat-num">4+</span>
+            <span class="about__stat-label">Languages: Java, C, C++, Python</span>
+          </li>
+          <li>
+            <span class="about__stat-num">5</span>
+            <span class="about__stat-label">Shipped projects, app to hardware</span>
+          </li>
+          <li>
+            <span class="about__stat-num">2024</span>
+            <span class="about__stat-label">Started B.Tech CSE (AI &amp; ML)</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section--alt" id="skills">
+      <div class="section__head">
+        <h2 class="section__title">Skills</h2>
+      </div>
+
+      <div class="skills__grid">
+        <div class="skill-group">
+          <h3 class="skill-group__title">Programming</h3>
+          <ul class="skill-list">
+            <li>Java</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>Python</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">Computer Science</h3>
+          <ul class="skill-list">
+            <li>Data Structures &amp; Algorithms</li>
+            <li>DBMS</li>
+            <li>Operating Systems</li>
+            <li>Computer Networks</li>
+            <li>Object-Oriented Programming</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">AI / ML</h3>
+          <ul class="skill-list">
+            <li>Machine Learning</li>
+            <li>Neural Networks</li>
+            <li>AI/ML Fundamentals</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">Development</h3>
+          <ul class="skill-list">
+            <li>Flutter</li>
+            <li>Firebase</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git / GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="section__head">
+        <h2 class="section__title">Projects</h2>
+        <p class="section__sub">A few things I've designed, built and shipped.</p>
+      </div>
+
+      <div class="projects__grid" id="projectsGrid">
+        <!-- Project cards are rendered here by script.js from the PROJECTS data array -->
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    
+<section class="section section--alt" id="education">
+  <div class="section__head">
+    <h2 class="section__title">Education</h2>
+  </div>
+
+  <!-- 10th Standard -->
+  <div class="edu-card">
+    <div class="edu-card__meta">
+      <span class="edu-card__years">2022</span>
+    </div>
+    <div class="edu-card__body">
+      <h3 class="edu-card__degree">10th Standard</h3>
+      <p class="edu-card__school">Sri Chaitanya Techno School </p>
+      <p class="edu-card__spec">Completed Secondary Education</p>
+    </div>
+  </div>
+
+  <!-- Intermediate -->
+  <div class="edu-card">
+    <div class="edu-card__meta">
+      <span class="edu-card__years">2022 — 2024</span>
+    </div>
+    <div class="edu-card__body">
+      <h3 class="edu-card__degree">Intermediate (11th &amp; 12th)</h3>
+      <p class="edu-card__school">Sri Chaitanya Jr College</p>
+      <p class="edu-card__spec">Intermediate Education</p>
+    </div>
+  </div>
+
+  <!-- B.Tech -->
+  <div class="edu-card">
+    <div class="edu-card__meta">
+      <span class="edu-card__years">2024 — Present</span>
+    </div>
+    <div class="edu-card__body">
+      <h3 class="edu-card__degree">
+        B.Tech, Computer Science &amp; Engineering
+      </h3>
+      <p class="edu-card__spec">
+        Specialization: Artificial Intelligence &amp; Machine Learning
+      </p>
+      <p class="edu-card__school">VIT-AP University</p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section class="section" id="certifications">
+      <div class="section__head">
+        <h2 class="section__title">Certifications</h2>
+        <p class="section__sub">Add entries in <code>script.js</code> — this list renders itself.</p>
+      </div>
+
+      <ul class="cert-list" id="certList">
+        <!-- Certification items are rendered here by script.js from the CERTIFICATIONS data array -->
+      </ul>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section class="section section--alt" id="achievements">
+      <div class="section__head">
+        <h2 class="section__title">Achievements</h2>
+      </div>
+
+      <div class="achievements__grid" id="achievementsGrid">
+        <!-- Achievement cards are rendered here by script.js from the ACHIEVEMENTS data array -->
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="section__head">
+        <h2 class="section__title">Contact</h2> 
+      </div>
+
+      <div class="contact__grid">
+        <!-- EDIT: replace with your email -->
+        <a class="contact__card" href="mailto:your.email@example.com">
+          <span class="contact__label">Email</span>
+          <span class="contact__value">mdgmunagala@gmail.com</span>
+        </a>
+        <!-- EDIT: replace with your GitHub URL -->
+        <a class="contact__card" href="https://github.com/saipavan-blip" target="_blank" rel="noopener noreferrer">
+          <span class="contact__label">GitHub</span>
+          <span class="contact__value">github.com/saipavan</span>
+        </a>
+        <!-- EDIT: replace with your LinkedIn URL -->
+        <a class="contact__card" href="https://www.linkedin.com/in/dola-guru-sai-pavan-munagala-7b2544333/?isSelfProfile=true" target="_blank" rel="noopener noreferrer">
+          <span class="contact__label">LinkedIn</span>
+          <span class="contact__value">linkedin.com/in/saipavan</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Designed &amp; built by Sai Pavan. <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
